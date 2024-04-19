@@ -1,6 +1,4 @@
-const fs = require("fs").promises;
-const path = require("path");
+import * as fs from "node:fs/promises";
+import path from "node:path";
 
-const contactsPath = path.join(`${__dirname}/contacts.json`);
-
-console.log(__dirname);
+const contactsPath = path.resolve("db", "contacts.json");
